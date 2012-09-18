@@ -163,7 +163,7 @@ public class CameraScreenNail extends SurfaceTextureScreenNail {
             if (mAnimState == ANIM_CAPTURE_RUNNING || mAnimState == ANIM_SWITCH_RUNNING) {
                 boolean drawn;
                 if (mAnimState == ANIM_CAPTURE_RUNNING) {
-                    drawn = mCaptureAnimManager.drawAnimation(canvas, this, mAnimTexture);
+                    drawn = false;
                 } else {
                     drawn = mSwitchAnimManager.drawAnimation(canvas, x, y,
                             width, height, this, mAnimTexture);
